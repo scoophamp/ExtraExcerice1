@@ -18,12 +18,29 @@ namespace ExtraExercise_nr4
         }
         
 
-        public int VäxlaNer
+        public int Växlaner
         {
             get { return gearDown; }
             set { gearDown = value; }
         }
-
+        public void VäxlaUpp()
+        {
+            int upp = 0;
+            for (int i = 0; i < 5; i++)
+            {
+                i++;
+            }
+            Console.WriteLine("Växlen är nu: "+upp);
+        }
+        public void VäxlaNer()
+        {
+            int ner = 0;
+            for (int i = 5; i >=0; i--)
+            {
+                i--;
+            }
+            Console.WriteLine("Växlen är nu: "+ner);
+        }
 
     }
 }
