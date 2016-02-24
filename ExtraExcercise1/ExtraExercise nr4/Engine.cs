@@ -24,12 +24,16 @@ namespace ExtraExercise_nr4
             get { return StoppEngine; }
             set { StoppEngine = value; }
         }
-        public void StartaMotor(string svar)
+
+        public void StartaMotor(string startmotor)
         {
-            if (StartaEngine == "y")
+            Console.WriteLine("Vill du starta motorn? y/n");
+            var svar = Console.ReadLine();
+            
+            if (svar.ToLower() == "y")
             {
-                Car starta = new Car();
-                starta.StartEngine();
+                StartaEngine = "Motorn är startad";
+                
             }
         }
 
