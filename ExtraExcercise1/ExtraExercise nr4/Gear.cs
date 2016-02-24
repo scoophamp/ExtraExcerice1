@@ -26,7 +26,7 @@ namespace ExtraExercise_nr4
         public void VäxlaUpp()
         {
             int upp = 0;
-            for (int i = 0; i < 5; i++)
+            for (int i = 1; i < 5; i++)
             {
                 i++;
             }
