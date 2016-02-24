@@ -30,6 +30,9 @@ namespace ExtraExcercise1
             string[] namn = new string[4] { "Hello", "Hello", "Hi", "Hello" };
             //string[]namn; Dessa två gröna rader är samma som raden ovan
             //namn = new string[4] { "Hello", "Hello", "Hi", "Hello" };
+
+            //This is Johans Comment Line
+            Console.WriteLine("Hello from Johan");
             Console.WriteLine(ArrayCounter(namn));
         }
     }
