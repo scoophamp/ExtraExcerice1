@@ -13,7 +13,28 @@ namespace ExtraExcercise1
         static void Main(string[] args)
         {
 
+
+        public static int ArrayCounter(string[] namn)//
+        {
+            int antal = 0;
+            for (int i = 0; i < namn.Length; i++)
+            {
+                if (namn[i] == "Hello")
+                {
+                    antal++;
+                }
+            }
+            return antal;
+
         }
+        static void Main(string[] args)
+        {
+            string[] namn = new string[4] { "Hello", "Hello", "Hi", "Hello" };
+            //string[]namn; Dessa två gröna rader är samma som raden ovan
+            //namn = new string[4] { "Hello", "Hello", "Hi", "Hello" };
+            Console.WriteLine(ArrayCounter(namn));
+        }
+    }
 
 
     }
