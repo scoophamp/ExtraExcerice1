@@ -20,7 +20,14 @@ namespace Extra_Exercise_nr2
                     result += c;
             }
             Console.WriteLine(result);
+            Personer nyPerson = new Personer();
 
+            Console.WriteLine("vad är dit förnamn? ");
+            nyPerson.firstname = Console.ReadLine();
+            Console.WriteLine("vad är ditt efternamn? ");
+            nyPerson.lastname = Console.ReadLine();
+            Console.WriteLine("ditt fulla namn är " + nyPerson.Fullname);
+            
         }
         static void Main(string[] args)
         {
@@ -28,5 +35,9 @@ namespace Extra_Exercise_nr2
             Console.ReadKey();
             
         }
+
+        
+        
+        
     }
 }

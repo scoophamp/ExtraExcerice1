@@ -11,7 +11,7 @@ namespace ExtraExercise_nr4
 
         public void StartEngine()
         {
-
+            Console.WriteLine("Engine started");
         }
         public void StopEngine()
         {
