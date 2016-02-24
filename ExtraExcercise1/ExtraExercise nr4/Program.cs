@@ -18,13 +18,14 @@ namespace ExtraExercise_nr4
             Console.WriteLine("Välj alternativ nedan: ");
             Console.WriteLine("(y) Starta bilen");
             Console.WriteLine("(n) Avsluta");
-            motor.StartaMotor(Console.ReadLine());
+            
 
-            while (val == "Q")
+            while (val != "Q")
             {
                 switch (val)
                 {
                     case "y":
+                        motor.StartaMotor(val);
                         break;
 
                     case "n":

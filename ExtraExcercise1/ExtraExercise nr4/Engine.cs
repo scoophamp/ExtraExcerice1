@@ -33,6 +33,7 @@ namespace ExtraExercise_nr4
             if (svar.ToLower() == "y")
             {
                 StartaEngine = "Motorn är startad";
+                Console.ReadKey();
                 
             }
         }
