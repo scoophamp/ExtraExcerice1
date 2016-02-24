@@ -14,13 +14,7 @@ namespace ExtraExercise_nr4
         public string StartaEngine
         {
             get { return StartaEngine; }
-            set {
-                if (StartaEngine == "y")
-                {
-                    Car starta = new Car();
-                    starta.StartEngine();
-                }
-                StartaEngine = value; }
+            set { StartaEngine = value; }
         }
 
         
@@ -29,6 +23,14 @@ namespace ExtraExercise_nr4
         {
             get { return StoppEngine; }
             set { StoppEngine = value; }
+        }
+        public void StartaMotor(string svar)
+        {
+            if (StartaEngine == "y")
+            {
+                Car starta = new Car();
+                starta.StartEngine();
+            }
         }
 
         

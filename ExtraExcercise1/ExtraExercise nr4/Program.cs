@@ -10,6 +10,11 @@ namespace ExtraExercise_nr4
     {
         static void Main(string[] args)
         {
+            Engine motor = new Engine();
+            Console.WriteLine("Vill du starta motorn? y/n");
+            var svar = Console.ReadLine();
+            motor.StartaMotor(svar);
+
         }
     }
 }
