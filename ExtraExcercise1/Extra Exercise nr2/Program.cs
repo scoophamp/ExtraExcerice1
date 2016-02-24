@@ -19,12 +19,14 @@ namespace Extra_Exercise_nr2
                 if (c != " ")
                     result += c;
             }
-            
+            Console.WriteLine(result);
 
         }
         static void Main(string[] args)
         {
-           
+            TaBortFilter();
+            Console.ReadKey();
+            
         }
     }
 }
