@@ -18,7 +18,7 @@ namespace ExtraExercise_nr4
             Console.WriteLine("Välj alternativ nedan: ");
             Console.WriteLine("(y) Starta bilen");
             Console.WriteLine("(n) Avsluta");
-            
+            val = Console.ReadLine();
 
             while (val != "Q")
             {
