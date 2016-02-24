@@ -21,15 +21,29 @@ namespace ExtraExercise_nr4
             val = Console.ReadLine();
 
             while (val != "Q")
+                
             {
                 switch (val)
                 {
                     case "y":
                         motor.StartaMotor();
+                        Console.WriteLine("Stanna bilen? Tryck n");
+                        val = Console.ReadLine();
+                        switch (val)
+                        {
+                            case "n":
+                                motor.StoppaMotorn();
+                                Console.ReadLine();
+                                break;
+
+                            default:
+                                break;
+                        }
+
                         break;
 
                     case "n":
-                        motor.StoppaMotorn();
+                        
                         break;
 
                     default:
