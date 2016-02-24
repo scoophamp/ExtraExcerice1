@@ -32,10 +32,6 @@ namespace Extra_Exercise_nr2
             set { fullname = value; }
         }
         
-
-        static void Setfirstname()
-        {
-            
-        }
+        
     }
 }
