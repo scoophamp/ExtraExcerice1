@@ -35,7 +35,7 @@ namespace ExtraExercise_nr4
         public void VäxlaNer()
         {
             int ner = 0;
-            for (int i = 5; i >=0; i--)
+            for (int i = 5; i >=2; i--)
             {
                 i--;
             }
