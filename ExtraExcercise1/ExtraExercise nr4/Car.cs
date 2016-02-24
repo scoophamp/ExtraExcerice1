@@ -15,7 +15,7 @@ namespace ExtraExercise_nr4
         }
         public void StopEngine()
         {
-
+            Console.WriteLine("Engine is already stopped!");
         }
         public void MoveGear(int NewGear)
         {
