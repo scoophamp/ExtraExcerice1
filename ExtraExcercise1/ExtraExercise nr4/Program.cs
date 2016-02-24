@@ -10,11 +10,30 @@ namespace ExtraExercise_nr4
     {
         static void Main(string[] args)
         {
-            Engine motor = new Engine();
-            Console.WriteLine("Vill du starta motorn? y/n");
-            var svar = Console.ReadLine();
-            motor.StartaMotor(svar);
+            string val = "";
+            string kalas = "";
 
+            Engine motor = new Engine();
+            Console.WriteLine("Välkommen till bilen");
+            Console.WriteLine("Välj alternativ nedan: ");
+            Console.WriteLine("(y) Starta bilen");
+            Console.WriteLine("(n) Avsluta");
+            motor.StartaMotor(Console.ReadLine());
+
+            while (val == "Q")
+            {
+                switch (val)
+                {
+                    case "y":
+                        break;
+
+                    case "n":
+                        break;
+
+                    default:
+                        break;
+                }
+            }
         }
     }
 }
