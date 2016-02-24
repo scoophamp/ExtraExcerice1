@@ -8,5 +8,7 @@ namespace ExtraExercise_nr4
 {
     class Engine
     {
+        public int StartEngine { get; set; }
+        public int StopEngine { get; set; }
     }
 }
