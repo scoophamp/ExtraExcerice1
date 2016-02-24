@@ -34,6 +34,7 @@ namespace ExtraExercise_nr4
                         Console.WriteLine("Stanna bilen? Tryck n");
                         Console.WriteLine("Växla upp? Tryck u");
                         Console.WriteLine("Växla ner? Tryck d");
+                            Gear gear = new Gear();
                         val = Console.ReadLine();
                         switch (val)
                         {
@@ -42,8 +43,11 @@ namespace ExtraExercise_nr4
                                 Console.ReadLine();
                                 break;
                             case "u":
+                                    gear.VäxlaUpp();
+                                    Console.ReadKey();
                                 break;
                             case "d":
+                                    gear.VäxlaNer();
                                 break;
                             default:
                                 break;
@@ -54,7 +58,9 @@ namespace ExtraExercise_nr4
                         
                 
                     case "n":
-                        
+                        Console.WriteLine("Välkommen åter, tryck valfri knapp för att avsluta");
+                        Console.ReadKey();
+                        Environment.Exit(0);
                         break;
 
                     default:
