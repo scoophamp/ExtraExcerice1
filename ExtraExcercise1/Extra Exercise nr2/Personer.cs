@@ -9,26 +9,33 @@ namespace Extra_Exercise_nr2
     class Personer
     {
         private string firstName;
+        private string lastName;
+        private string fullname;
 
         public string firstname
         {
             get { return firstName; }
             set { firstName = value; }
         }
-        private string lastName;
+        
 
         public string lastname
         {
             get { return lastName; }
             set { lastName = value; }
         }
-        private string fullname;
+        
 
-        public string MyProperty
+        public string Fullname
         {
             get { return firstname + lastName; }
             set { fullname = value; }
         }
+        
 
+        static void Setfirstname()
+        {
+            
+        }
     }
 }
