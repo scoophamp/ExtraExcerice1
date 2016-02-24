@@ -11,7 +11,7 @@ namespace ExtraExercise_nr4
         static void Main(string[] args)
         {
             string val = "";
-            string kalas = "";
+            
 
             Engine motor = new Engine();
             Console.WriteLine("Välkommen till bilen");
@@ -25,10 +25,11 @@ namespace ExtraExercise_nr4
                 switch (val)
                 {
                     case "y":
-                        motor.StartaMotor(val);
+                        motor.StartaMotor();
                         break;
 
                     case "n":
+                        motor.StoppaMotorn();
                         break;
 
                     default:

@@ -16,22 +16,27 @@ namespace ExtraExercise_nr4
             get { return startaengine; }
             set { startaengine = value; }
         }
-
+      
         public string StoppEngine
         {
             get { return stopengine; }
             set { stopengine = value; }
         }
 
-        public void StartaMotor(string startmotor)
+        public void StartaMotor()
         {
-            startaengine = "Motorn är startad";
+                startaengine = "Motorn är startad";
             Console.WriteLine(startaengine);
-
-
+                
+            }
+        public void StoppaMotorn()
+        {
+            stopengine = "Motorn är stoppad";
+            Console.WriteLine(stopengine);
+        }
         }
 
-
+        
     }
 }
 
