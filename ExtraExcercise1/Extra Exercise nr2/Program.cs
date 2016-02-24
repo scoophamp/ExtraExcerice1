@@ -8,8 +8,13 @@ namespace Extra_Exercise_nr2
 {
     class Program
     {
+        static void TaBortFilter()
+        {
+           
+        }
         static void Main(string[] args)
         {
+            
         }
     }
 }
