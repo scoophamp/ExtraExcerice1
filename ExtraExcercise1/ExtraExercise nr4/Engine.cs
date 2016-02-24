@@ -8,7 +8,23 @@ namespace ExtraExercise_nr4
 {
     class Engine
     {
-        public int StartEngine { get; set; }
-        public int StopEngine { get; set; }
+        private int StartEngine;
+        private int StopEngine;
+
+        public int StartaEngine
+        {
+            get { return StartaEngine; }
+            set { StartaEngine = value; }
+        }
+
+        
+
+        public int StoppEngine
+        {
+            get { return StoppEngine; }
+            set { StoppEngine = value; }
+        }
+
+        
     }
 }
