@@ -8,13 +8,19 @@ namespace ExtraExercise_nr4
 {
     class Engine
     {
-        private int StartEngine;
+        private string StartEngine;
         private int StopEngine;
 
-        public int StartaEngine
+        public string StartaEngine
         {
             get { return StartaEngine; }
-            set { StartaEngine = value; }
+            set {
+                if (StartaEngine == "y")
+                {
+                    Car starta = new Car();
+                    starta.StartEngine();
+                }
+                StartaEngine = value; }
         }
 
         
