@@ -27,7 +27,13 @@ namespace ExtraExercise_nr4
                 {
                     case "y":
                         motor.StartaMotor();
+                        while (val != "Q")
+                        {
+
+                       
                         Console.WriteLine("Stanna bilen? Tryck n");
+                        Console.WriteLine("Växla upp? Tryck u");
+                        Console.WriteLine("Växla ner? Tryck d");
                         val = Console.ReadLine();
                         switch (val)
                         {
@@ -35,13 +41,18 @@ namespace ExtraExercise_nr4
                                 motor.StoppaMotorn();
                                 Console.ReadLine();
                                 break;
-
+                            case "u":
+                                break;
+                            case "d":
+                                break;
                             default:
                                 break;
                         }
-
+                        }
                         break;
-
+                        
+                        
+                
                     case "n":
                         
                         break;
