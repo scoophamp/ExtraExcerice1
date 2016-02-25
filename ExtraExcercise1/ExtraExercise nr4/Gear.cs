@@ -48,7 +48,7 @@ namespace ExtraExercise_nr4
         {
             if (gearDown > 5)
             {
-                gearDown += 1;
+                gearDown -= 1;
                 Console.WriteLine("Gear is on: " + gearDown);
             }
             else
