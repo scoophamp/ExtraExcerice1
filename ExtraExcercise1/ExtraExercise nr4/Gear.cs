@@ -23,22 +23,21 @@ namespace ExtraExercise_nr4
             get { return gearDown; }
             set { gearDown = value; }
         }
+        public Gear()//konstruktor tom
+        {
+            
+        }
+        public Gear(int gearup)// konstruktor med int inparameter
+        {
+            this.gearUp = gearup;
+        }
         public void VäxlaUpp()
         {
             
-            
-            gearUp++;
-            
-            Console.WriteLine("Växlen är nu: "+gearUp);
         }
         public void VäxlaNer()
         {
-            int ner = 0;
-            for (int i = 5; i >=2; i--)
-            {
-                i--;
-            }
-            Console.WriteLine("Växlen är nu: "+ner);
+            
         }
 
     }
