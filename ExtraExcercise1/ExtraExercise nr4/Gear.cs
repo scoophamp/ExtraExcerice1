@@ -31,30 +31,26 @@ namespace ExtraExercise_nr4
         {
             this.gearUp = gearup;
         }
-        public void VäxlaUpp()
+        public int VäxlaUpp()
         {
             
-            if (gearUp<5)
+            if (gearUp<=5)
             {
                 gearUp += 1;
-                Console.WriteLine("Gear is on: "+gearUp);
-            } 
-            else
-            {
-                Console.WriteLine("Gear is already 5!");
-            } 
+                return gearUp;
+            }
+            return 0;
+            
         }
-        public void VäxlaNer()
+        public int VäxlaNer()
         {
-            if (gearDown > 5)
+            if (gearDown >= 4)
             {
                 gearDown -= 1;
-                Console.WriteLine("Gear is on: " + gearDown);
+                return gearDown;
             }
-            else
-            {
-                Console.WriteLine("Gear is already 0!");
-            }
+            return 0;
+           
 
         }
 

@@ -11,7 +11,8 @@ namespace ExtraExercise_nr4
         static void Main(string[] args)
         {
             string val = "";
-            
+
+            int gearbox = 1;
 
             Engine motor = new Engine();
             Console.WriteLine("Välkommen till bilen");
@@ -43,11 +44,27 @@ namespace ExtraExercise_nr4
                                 Console.ReadLine();
                                 break;
                             case "u":
-                                    gear.VäxlaUpp();
+                                    if (gearbox <= 4)
+                                    {
+                                        gearbox += gear.VäxlaUpp();
+                                        Console.WriteLine("Gear is on: " + gearbox);
+                                    }
+                                    else
+                                    {
+                                        Console.WriteLine("GearBox is already at 5");
+                                    }
                                     Console.ReadKey();
                                 break;
                             case "d":
-                                    gear.VäxlaNer();
+                                    if(gearbox>=1)
+                                    {
+                                        gearbox -= gear.VäxlaNer();
+                                        Console.WriteLine("Gear is on: "+gearbox);
+                                    }
+                                    else
+                                    {
+                                        Console.WriteLine("Gearbox is already at 1");
+                                    }
                                 break;
                             default:
                                 break;
