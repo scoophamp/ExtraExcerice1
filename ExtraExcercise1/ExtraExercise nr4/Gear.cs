@@ -25,11 +25,11 @@ namespace ExtraExercise_nr4
         }
         public void VäxlaUpp()
         {
-            int upp = 1;
             
-            upp++;
             
-            Console.WriteLine("Växlen är nu: "+upp);
+            gearUp++;
+            
+            Console.WriteLine("Växlen är nu: "+gearUp);
         }
         public void VäxlaNer()
         {
