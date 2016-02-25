@@ -10,8 +10,8 @@ namespace ExtraExercise_nr4
     {
         static void Main(string[] args)
         {
-            string val = "";
-
+            string _val = "";
+            
             int gearbox = 1;
 
             Engine motor = new Engine();
@@ -19,16 +19,16 @@ namespace ExtraExercise_nr4
             Console.WriteLine("Välj alternativ nedan: ");
             Console.WriteLine("(y) Starta bilen");
             Console.WriteLine("(n) Avsluta");
-            val = Console.ReadLine();
+            _val = Console.ReadLine();
 
-            while (val != "Q")
+            while (_val != "Q")
                 
             {
-                switch (val)
+                switch (_val)
                 {
                     case "y":
                         motor.StartaMotor();
-                        while (val != "Q")
+                        while (_val != "Q")
                         {
 
                        
@@ -36,8 +36,8 @@ namespace ExtraExercise_nr4
                         Console.WriteLine("Växla upp? Tryck u");
                         Console.WriteLine("Växla ner? Tryck d");
                         Gear gear = new Gear();
-                        val = Console.ReadLine();
-                        switch (val)
+                        _val = Console.ReadLine();
+                        switch (_val)
                         {
                             case "n":
                                 motor.StoppaMotorn();
