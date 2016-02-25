@@ -34,10 +34,28 @@ namespace ExtraExercise_nr4
         public void VäxlaUpp()
         {
             
+            if (gearUp<5)
+            {
+                gearUp += 1;
+                Console.WriteLine("Gear is on: "+gearUp);
+            } 
+            else
+            {
+                Console.WriteLine("Gear is already 5!");
+            } 
         }
         public void VäxlaNer()
         {
-            
+            if (gearDown > 5)
+            {
+                gearDown -= 1;
+                Console.WriteLine("Gear is on: " + gearDown);
+            }
+            else
+            {
+                Console.WriteLine("Gear is already 0!");
+            }
+
         }
 
     }
