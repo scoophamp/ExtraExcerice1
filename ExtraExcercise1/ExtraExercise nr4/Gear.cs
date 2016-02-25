@@ -44,10 +44,10 @@ namespace ExtraExercise_nr4
             } 
         public int VäxlaNer()
         {
-            if (gearDown > 5)
+            if (_gearDown > 5)
             {
-                gearDown -= 1;
-                Console.WriteLine("Gear is on: " + gearDown);
+                _gearDown -= 1;
+                Console.WriteLine("Gear is on: " + _gearDown);
             }
             else
             {
