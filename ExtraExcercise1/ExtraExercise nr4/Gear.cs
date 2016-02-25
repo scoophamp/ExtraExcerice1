@@ -34,10 +34,10 @@ namespace ExtraExercise_nr4
         public void VäxlaUpp()
         {
             
-            if (gearUp<5)
+            if (_gearUp<5)
             {
-                gearUp += 1;
-                Console.WriteLine("Gear is on: "+gearUp);
+                _gearUp += 1;
+                Console.WriteLine("Gear is on: "+_gearUp);
             } 
             else
             {
@@ -46,10 +46,10 @@ namespace ExtraExercise_nr4
         }
         public void VäxlaNer()
         {
-            if (gearDown > 5)
+            if (_gearDown > 5)
             {
-                gearDown -= 1;
-                Console.WriteLine("Gear is on: " + gearDown);
+                _gearDown -= 1;
+                Console.WriteLine("Gear is on: " + _gearDown);
             }
             else
             {
