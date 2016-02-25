@@ -34,7 +34,7 @@ namespace ExtraExercise_nr4
                         Console.WriteLine("Stanna bilen? Tryck n");
                         Console.WriteLine("Växla upp? Tryck u");
                         Console.WriteLine("Växla ner? Tryck d");
-                            Gear gear = new Gear();
+                        Gear gear = new Gear();
                         val = Console.ReadLine();
                         switch (val)
                         {

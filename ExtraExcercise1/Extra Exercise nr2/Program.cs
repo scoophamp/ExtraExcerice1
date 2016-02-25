@@ -20,6 +20,13 @@ namespace Extra_Exercise_nr2
                     result += c;
             }
             Console.WriteLine(result);
+           
+            
+        }
+        static void Main(string[] args)
+        {
+            TaBortFilter();
+            Console.ReadKey();
             Personer nyPerson = new Personer();
 
             Console.WriteLine("vad är dit förnamn? ");
@@ -27,13 +34,7 @@ namespace Extra_Exercise_nr2
             Console.WriteLine("vad är ditt efternamn? ");
             nyPerson.lastname = Console.ReadLine();
             Console.WriteLine("ditt fulla namn är " + nyPerson.Fullname);
-            
-        }
-        static void Main(string[] args)
-        {
-            TaBortFilter();
-            Console.ReadKey();
-            
+
         }
 
         
