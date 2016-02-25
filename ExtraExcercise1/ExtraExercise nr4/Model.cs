@@ -8,17 +8,17 @@ namespace ExtraExercise_nr4
 {
     class Model
     {
-        public string Brand { get; set; }
-        public string Models { get; set; }
+        public string _Brand { get; set; }
+        public string _Models { get; set; }
 
         public void SetModel(string model)
         {
-            this.Models = model;
+            this._Models = model;
         }
 
         public void SetBrand(string brand)
         {
-            this.Brand = brand;
+            this._Brand = brand;
         }
     }
 }

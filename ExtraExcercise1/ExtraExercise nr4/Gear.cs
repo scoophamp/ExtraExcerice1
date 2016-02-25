@@ -8,20 +8,20 @@ namespace ExtraExercise_nr4
 {
     class Gear
     {
-        private int gearUp;
-        private int gearDown;
+        private int _gearUp;
+        private int _gearDown;
 
         public int Växlaupp
         {
-            get { return gearUp; }
-            set { gearUp = value; }
+            get { return _gearUp; }
+            set { _gearUp = value; }
         }
         
 
         public int Växlaner
         {
-            get { return gearDown; }
-            set { gearDown = value; }
+            get { return _gearDown; }
+            set { _gearDown = value; }
         }
         public Gear()//konstruktor tom
         {
@@ -29,7 +29,7 @@ namespace ExtraExercise_nr4
         }
         public Gear(int gearup)// konstruktor med int inparameter
         {
-            this.gearUp = gearup;
+            this._gearUp = gearup;
         }
         public void VäxlaUpp()
         {

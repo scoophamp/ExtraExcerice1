@@ -8,31 +8,31 @@ namespace ExtraExercise_nr4
 {
     class Engine
     {
-        private string startaengine;
-        private string stopengine;
+        private string _startaengine;
+        private string _stopengine;
 
         public string StartaEngine
         {
-            get { return startaengine; }
-            set { startaengine = value; }
+            get { return _startaengine; }
+            set { _startaengine = value; }
         }
       
         public string StoppEngine
         {
-            get { return stopengine; }
-            set { stopengine = value; }
+            get { return _stopengine; }
+            set { _stopengine = value; }
         }
 
         public void StartaMotor()
         {
-                startaengine = "Motorn är startad";
-            Console.WriteLine(startaengine);
+                _startaengine = "Motorn är startad";
+            Console.WriteLine(_startaengine);
                 
             }
         public void StoppaMotorn()
         {
-            stopengine = "Motorn är stoppad";
-            Console.WriteLine(stopengine);
+            _stopengine = "Motorn är stoppad";
+            Console.WriteLine(_stopengine);
         }
         
 
